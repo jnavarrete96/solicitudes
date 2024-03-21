@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -44,7 +45,7 @@ public class RequestVacationEntity {
 
     @Basic(optional = false)
     @Column(name = "fe_fecha_creacion")
-    private LocalDate feCreated;
+    private LocalDateTime feCreated;
 
     @ManyToOne(
             fetch = FetchType.LAZY,
